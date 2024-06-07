@@ -1,33 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Form from './components/Form'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="bg-lime-600 py-3">
+        <div className="max-w-4xl mx-auto flex justify-between">
+          <h1 className="text-center text-lg font-bold text-white uppercase">Contador de Calorías</h1>
+        </div>
+      </header>
+
+      <section className="bg-lime-500 py-20 px-5">
+        <div className="max-w-4xl mx-auto">
+          <Form/>
+        </div>
+      </section>
     </>
   )
 }
