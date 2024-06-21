@@ -35,18 +35,13 @@ function App() {
 
       <section className="bg-lime-500 py-20 px-5">
         <div className="max-w-4xl mx-auto">
-          <Form
-            dispatch={dispatch}
-            state={state}
-          />
+          <Form/>
         </div>
       </section>
 
       <section className='bg-gray-800 py-10'>
         <div className="max-w-4xl mx-auto">
-          <CalorieTracker
-            activities={state.activities}
-          />
+          <CalorieTracker/>
         </div>
 
       </section>
@@ -55,10 +50,7 @@ function App() {
       <section
         className=' p-10 mx-auto max-w-4xl'
       >
-        <ActivictiList
-          activities={state.activities}
-          dispatch={dispatch}
-        />
+        <ActivictiList/>
       </section>
     </>
   )
